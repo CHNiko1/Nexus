@@ -107,20 +107,20 @@ export default async function OrderSuccessPage({
                 <div className="space-y-2">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Subtotal:</span>
-                    <span>{formatPrice(order.subtotal)}</span>
+                    <span>{formatPrice(Number(order.subtotal))}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Shipping:</span>
-                    <span>{order.shipping > 0 ? formatPrice(order.shipping) : 'FREE'}</span>
+                    <span>{Number(order.shipping) > 0 ? formatPrice(Number(order.shipping)) : 'FREE'}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Tax:</span>
-                    <span>{formatPrice(order.tax)}</span>
+                    <span>{formatPrice(Number(order.tax))}</span>
                   </div>
                   <Separator />
                   <div className="flex justify-between text-lg font-bold">
                     <span>Total:</span>
-                    <span>{formatPrice(order.total)}</span>
+                    <span>{formatPrice(Number(order.total))}</span>
                   </div>
                 </div>
               </div>
