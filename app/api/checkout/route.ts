@@ -103,7 +103,6 @@ export async function POST(req: NextRequest) {
           currency: 'usd',
           product_data: {
             name: 'Shipping',
-            description: 'Standard shipping',
           },
           unit_amount: Math.round(shipping * 100),
         },
