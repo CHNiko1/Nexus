@@ -207,49 +207,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Manager Section */}
-      <section className="container py-20">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Meet Our Manager</h2>
-          <p className="text-lg text-muted-foreground">Leading our team with passion and expertise</p>
-        </div>
-        <div className="max-w-2xl mx-auto">
-          <Card className="border-2 card-hover overflow-hidden">
-            <CardContent className="p-0">
-              <div className="grid md:grid-cols-2 gap-6 items-center">
-                <div className="relative aspect-square md:aspect-auto md:h-full min-h-[400px] overflow-hidden bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20">
-                  <Image
-                    src="/manager.jpg"
-                    alt="Our Manager - Ikakuna"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                </div>
-                <div className="p-8 space-y-4">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20 border w-fit">
-                    <Star className="h-4 w-4 text-purple-600" />
-                    <span className="text-sm font-medium">Store Manager</span>
-                  </div>
-                  <h3 className="text-3xl font-bold">Ikakuna</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    With years of experience in e-commerce and customer service, our manager ensures every shopping experience exceeds expectations. Dedicated to bringing you the best products and service.
-                  </p>
-                  <div className="flex gap-2 pt-4">
-                    <div className="flex items-center gap-1 text-sm">
-                      <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
-                      <span className="font-semibold">4.9 Rating</span>
-                    </div>
-                    <span className="text-muted-foreground">•</span>
-                    <div className="text-sm text-muted-foreground">10K+ Happy Customers</div>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
       {/* Featured Products */}
       <section className="container py-20">
         <div className="flex items-center justify-between mb-12">
